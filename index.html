@@ -40,9 +40,9 @@
 </head>
 
 <body class="font-lato">
-  <header class="max-w-screen-xl mx-auto ">
+  <header class="max-w-screen-xl mx-auto  border-blue-900 ">
     <nav
-      class="flex justify-between mx-auto md:justify-between lg:justify-around items-center md:justify-around items-center lg:bg-orange-500 md:bg-orange-500 p-4 rounded-full lg:my-8 md:my-5">
+      class="flex justify-between mx-auto md:justify-between lg:justify-around items-center md:justify-around items-center lg:bg-orange-500 md:bg-orange-500 p-4 rounded-full lg:my-8 md:my-5  ">
       <div class="navbar-start  hidden lg:flex md:hidden  flex justify-center gap-1">
         <ul class="menu menu-horizontal  text-white">
           <li><a class="text-xl">Home</a></li>
@@ -86,7 +86,7 @@
           </div>
         </div>
     </nav>
-    <section class="mx-auto lg:max-w-screen-xl w-full mb-100 ">
+    <section class="mx-auto lg:max-w-screen-xl w-full mb-100">
       <div class="carousel w-full mx-auto">
         <div id="slide1" class="carousel-item relative md:w-full  lg:w-full mx-auto">
           <div
@@ -166,15 +166,39 @@
         </div>
       </div>
     </section>
-
+    <section class="relative hidden lg:block md:hidden">
+      <div
+        class="py-2  absolute -top-20 right-20 mr-20 mb-20 flex items-center justify-around bg-white w-3/4 mx-auto rounded-lg shadow-xl">
+        <div class="flex flex-col items-center">
+          <img src="Images/fruit1.png" alt="">
+          <p>Grapes</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="Images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="Images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="Images/fruit4.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="Images/fruit5.png" alt="">
+          <p>Pomegranate seed</p>
+        </div>
+      </div>
+    </section>
   </header>
 
-  <main>
+  <main class="mt-100">
 
-    <section class=" lg:max-w-screen-xl mx-auto mt-10">
+    <section class=" lg:max-w-screen-xl mx-auto  lg:pt-36">
       <div class="flex items-center justify-between  flex-col md:flex-col lg:flex-row">
         <div class="space-y-4 w-3/4 lg:w-1/2 md:w-1/2 mb-5">
-          <h2 class="lg:text-5xl text-3xl font-semibold text-center lg:text-left">Deal of the day</h2>
+          <h2 class="lg:text-5xl text-2xl font-semibold text-center lg:text-left">Deal of the day</h2>
           <p class="text-base text-center md:text-center  lg:text-left">Contrary to popular belief, is not simply random
             text. It has
             roots in a
@@ -457,19 +481,12 @@
       <div class="flex justify-center text-center items-center flex-col ">
         <h1 class="mb-5 text-5xl font-bold">Why Choose Us</h1>
         <p class="mb-5 text-cente w-3/4 md:w-3/4 lg:w-3/5 lg:text-base mb-10">Contrary to popular belief, is not simply
-          random
-          text.
-          It
-          has
-          roots in a piece
-          of
-          classical
-          Latin literature from 45 BC,
-          making it over 2000 years old.</p>
+          random text. It has roots in a piece of classical Latin literature from 45 BC,making it over 2000 years old.
+        </p>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          <div class="order-2 lg:order-1">
+          <div class="order-2 lg:order-1 md:order-2">
             <div class="flex lg:flex-row flex-col items-center gap-3">
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center relative">
                 <i class="fa-solid fa-users absolute right-7 bottom-8"></i>
               </div>
               <div class="space-y-2 mb-3 lg:text-left text-center">
@@ -482,7 +499,7 @@
             </div>
             <!-- left div-2 -->
             <div class="flex  items-center lg:flex-row flex-col gap-3">
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200  flex items-center relative">
                 <i class="fa-solid fa-heart absolute text-xl right-7 bottom-6"></i>
               </div>
               <div class="space-y-2 lg:text-left text-center mb-3">
@@ -495,7 +512,7 @@
             </div>
             <!-- left div-3 -->
             <div class="flex  items-center lg:flex-row flex-col gap-3">
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200  flex items-center relative">
                 <i class="fa-solid fa-gift absolute text-xl right-8 bottom-7"></i>
               </div>
               <div class="space-y-2 mb-3 lg:text-left text-center">
@@ -508,11 +525,11 @@
             </div>
           </div>
           <!-- image div -->
-          <div class="order-1 lg:order-2">
-            <img class="lg:w-full w-4/5 mx-auto" src="Images/whychoose1.png" alt="">
+          <div class="order-1 lg:order-2 md:order-1">
+            <img class="lg:w-full md:w-full w-4/5 mx-auto" src="Images/whychoose1.png" alt="">
           </div>
           <!-- right side div-1 -->
-          <div class=" text-right order-3 lg:order-3">
+          <div class=" text-right order-3 lg:order-3 md:order-3">
             <div class="flex items-center justify-end lg:flex-row flex-col flex-col-reverse gap-3">
               <div class="space-y-2 lg:text-right text-center mb-3">
                 <h2 class="text-2xl font-semibold">Integrated Supplier</h2>
@@ -521,7 +538,7 @@
                   fruits.
                 </p>
               </div>
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200  flex items-center relative">
                 <i class="fa-regular fa-handshake absolute text-xl right-7 bottom-6"></i>
               </div>
             </div>
@@ -533,7 +550,7 @@
                   fruits.
                 </p>
               </div>
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200  flex items-center relative">
                 <i class="fa-solid fa-ice-cream absolute text-xl right-8 bottom-7"></i>
               </div>
             </div>
@@ -545,7 +562,7 @@
                   fruits.
                 </p>
               </div>
-              <div class="w-20 h-20 rounded-full bg-red-400 flex items-center relative">
+              <div class="w-20 h-20 rounded-full bg-gray-200  flex items-center relative">
                 <i class="fa-regular fa-thumbs-up absolute text-xl right-8 bottom-7"></i>
               </div>
             </div>
